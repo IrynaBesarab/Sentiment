@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="DiaryMainCollectionViewCell" id="gTV-IL-0wX" customClass="DiaryMainCollectionViewCell" customModule="final" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="280" height="437"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="280" height="437"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wxA-Hd-KWX">
+                        <rect key="frame" x="0.0" y="0.0" width="280" height="437"/>
+                        <subviews>
+                            <textField opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" usesAttributedText="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qHE-8A-2VQ">
+                                <rect key="frame" x="3" y="71" width="275" height="53"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="53" id="cb4-Nx-Zek"/>
+                                </constraints>
+                                <attributedString key="attributedText">
+                                    <fragment content="Data.">
+                                        <attributes>
+                                            <color key="NSColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" metaFont="system" size="28"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Your mood scale : " textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vNY-cI-O44">
+                                <rect key="frame" x="61" y="138" width="132" height="34"/>
+                                <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lVh-Wc-zYO">
+                                <rect key="frame" x="192" y="139" width="55" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="55" id="H9f-S0-ct6"/>
+                                </constraints>
+                                <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" textAlignment="center" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pEB-Wd-wHq">
+                                <rect key="frame" x="13" y="223" width="254" height="199"/>
+                                <color key="backgroundColor" red="1" green="0.99536937206284648" blue="0.88314283545689076" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="199" id="XUq-YN-7Zk"/>
+                                </constraints>
+                                <color key="textColor" red="0.2156596127" green="0.44004498110000001" blue="0.2435335595" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" name="customGreen"/>
+                        <constraints>
+                            <constraint firstItem="qHE-8A-2VQ" firstAttribute="top" secondItem="wxA-Hd-KWX" secondAttribute="top" constant="71" id="4dX-he-hnO"/>
+                            <constraint firstAttribute="trailing" secondItem="lVh-Wc-zYO" secondAttribute="trailing" constant="33" id="8oy-Hm-TYx"/>
+                            <constraint firstItem="qHE-8A-2VQ" firstAttribute="centerX" secondItem="wxA-Hd-KWX" secondAttribute="centerX" id="Gyk-Rj-YmD"/>
+                            <constraint firstItem="vNY-cI-O44" firstAttribute="top" secondItem="qHE-8A-2VQ" secondAttribute="bottom" constant="14" id="Ncq-cQ-1ed"/>
+                            <constraint firstItem="qHE-8A-2VQ" firstAttribute="leading" secondItem="wxA-Hd-KWX" secondAttribute="leading" constant="3" id="OBw-wt-aZR"/>
+                            <constraint firstAttribute="trailing" secondItem="vNY-cI-O44" secondAttribute="trailing" constant="87" id="ORl-0k-YgL"/>
+                            <constraint firstItem="qHE-8A-2VQ" firstAttribute="centerX" secondItem="pEB-Wd-wHq" secondAttribute="centerX" id="QMq-bi-11J"/>
+                            <constraint firstItem="pEB-Wd-wHq" firstAttribute="top" secondItem="lVh-Wc-zYO" secondAttribute="bottom" constant="50" id="Yw0-kA-HOy"/>
+                            <constraint firstItem="lVh-Wc-zYO" firstAttribute="top" secondItem="qHE-8A-2VQ" secondAttribute="bottom" constant="15" id="cJF-dE-nAg"/>
+                            <constraint firstAttribute="bottom" secondItem="pEB-Wd-wHq" secondAttribute="bottom" constant="15" id="gcD-B6-dg3"/>
+                            <constraint firstItem="pEB-Wd-wHq" firstAttribute="leading" secondItem="wxA-Hd-KWX" secondAttribute="leading" constant="13" id="nb7-Hx-6iG"/>
+                            <constraint firstItem="vNY-cI-O44" firstAttribute="leading" secondItem="wxA-Hd-KWX" secondAttribute="leading" constant="61" id="u7f-Mi-bwc"/>
+                            <constraint firstItem="pEB-Wd-wHq" firstAttribute="top" secondItem="vNY-cI-O44" secondAttribute="bottom" constant="51" id="vFo-7Z-dqr"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="wxA-Hd-KWX" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="0Av-HZ-Zmg"/>
+                <constraint firstItem="wxA-Hd-KWX" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="2Je-rT-k0p"/>
+                <constraint firstAttribute="trailing" secondItem="wxA-Hd-KWX" secondAttribute="trailing" id="P8w-bX-x0U"/>
+                <constraint firstAttribute="bottom" secondItem="wxA-Hd-KWX" secondAttribute="bottom" id="aLL-s2-UEt"/>
+            </constraints>
+            <size key="customSize" width="152" height="196"/>
+            <connections>
+                <outlet property="dateLabelViewCell" destination="qHE-8A-2VQ" id="32Q-ym-IAF"/>
+                <outlet property="diaryTextView" destination="pEB-Wd-wHq" id="mZz-kf-U0t"/>
+                <outlet property="mainViewDiary" destination="wxA-Hd-KWX" id="I3z-wG-pal"/>
+                <outlet property="moodScaleTextField" destination="lVh-Wc-zYO" id="sCS-4j-7l5"/>
+            </connections>
+            <point key="canvasLocation" x="211.59420289855075" y="112.16517857142857"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <namedColor name="customGreen">
+            <color red="0.60100001096725464" green="0.65499997138977051" blue="0.38199999928474426" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

@@ -1,0 +1,44 @@
+PODS:
+  - Charts (4.1.0):
+    - Charts/Core (= 4.1.0)
+  - Charts/Core (4.1.0):
+    - SwiftAlgorithms (~> 1.0)
+  - FSCalendar (2.8.4)
+  - Gemini (1.4.0)
+  - IQKeyboardManagerSwift (6.5.10)
+  - Realm (10.31.0):
+    - Realm/Headers (= 10.31.0)
+  - Realm/Headers (10.31.0)
+  - RealmSwift (10.31.0):
+    - Realm (= 10.31.0)
+  - SwiftAlgorithms (1.0.0)
+
+DEPENDENCIES:
+  - Charts
+  - FSCalendar
+  - Gemini
+  - IQKeyboardManagerSwift
+  - RealmSwift
+
+SPEC REPOS:
+  trunk:
+    - Charts
+    - FSCalendar
+    - Gemini
+    - IQKeyboardManagerSwift
+    - Realm
+    - RealmSwift
+    - SwiftAlgorithms
+
+SPEC CHECKSUMS:
+  Charts: 354f86803d11d9c35de280587fef50d1af063978
+  FSCalendar: 2d1d0d9398f12d439f55c1fe0f01525b151b8260
+  Gemini: 4ad915cca8805577fe3021e02feeca2b77dcdbfc
+  IQKeyboardManagerSwift: 52962c76ab33532f15ad9f3ff4e5715eda5335bb
+  Realm: 10df7d86e1ca09d9948fdce2faa3fc623fb092c6
+  RealmSwift: aecc52389574be4d451bf6cb1b08824eaa17dad0
+  SwiftAlgorithms: 38dda4731d19027fdeee1125f973111bf3386b53
+
+PODFILE CHECKSUM: 673c6bdaeaf340e5f6f925c26420ec5621ee6d72
+
+COCOAPODS: 1.11.3

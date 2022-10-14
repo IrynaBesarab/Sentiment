@@ -1,0 +1,9 @@
+
+use_modular_headers!
+target 'final' do
+    pod 'FSCalendar', :modular_headers => true
+    pod 'Charts', :modular_headers => true
+    pod 'RealmSwift'
+    pod 'IQKeyboardManagerSwift'
+    pod 'Gemini'
+end
